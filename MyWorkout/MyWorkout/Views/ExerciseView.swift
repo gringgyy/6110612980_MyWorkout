@@ -9,13 +9,14 @@ import SwiftUI
 import AVKit
 
 struct ExerciseView: View {
-    @State private var rating = 0
     @State private var showHistory = false
     @State private var showSuccess = false
     @Binding var selectedTab: Int
     let index: Int
     @State private var timerDone = false
     @State private var showTimer = false
+    @EnvironmentObject var history: HistoryStore
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
@@ -28,8 +29,9 @@ struct ExerciseView: View {
                 }
                 
                 HStack(spacing: 150) {
-                    Button("Start") { showTimer.toggle() }
-                    Button("Done") {
+                    Button(NSLocalizedString("Start", comment: "begin exercise")) { showTimer.toggle() }
+                    Button(NSLocalizedString("Done", comment: "mark as finished")) {
+                        history.addDoneExercise(Exercise.exercises[index].exerciseName)
                         timerDone = false
                         showTimer.toggle()
                         
@@ -53,10 +55,10 @@ struct ExerciseView: View {
     
                 Spacer()
                 
-                RatingView(rating: $rating)
+                RatingView(exerciseIndex: index)
                     .padding()
                 
-                Button("History") {showHistory.toggle()}
+                Button(NSLocalizedString("History", comment: "view user action")) {showHistory.toggle()}
                     .padding(.bottom)
                     .sheet(isPresented: $showHistory) {
                         HistoryView(showHistory: $showHistory)
@@ -71,6 +73,7 @@ struct ExerciseView: View {
 
 struct ExerciseView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseView(selectedTab: .constant(9),index: 0)
+        ExerciseView(selectedTab: .constant(1),index: 1)
+            .environmentObject(HistoryStore())
     }
 }

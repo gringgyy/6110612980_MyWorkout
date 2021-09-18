@@ -13,4 +13,12 @@ extension Date {
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
     }
+    
+    func isSameDay(as day: Date) -> Bool {
+        yearMonthDay == day.yearMonthDay
+    }
+    
+    var yearMonthDay: String {
+        formatted(as: "yyyy MM dd")
+    }
 }

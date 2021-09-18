@@ -17,20 +17,20 @@ struct SuccessView: View {
                 Image(systemName: "hand.raised.fill")
                     .resizedToFill(width: 75, height: 75)
                     .foregroundColor(.purple)
-                Text("High Five!")
+                Text(NSLocalizedString("High Five!", comment: "congratulation"))
                     .font(.largeTitle)
                     .fontWeight(.heavy)
-                Text("""
+                Text(NSLocalizedString("""
                     Good job completing all four exercises!!
                     Remember tomorrow's another day.
                     So eat well and get some rest.
-                    """)
+                    """, comment: "suggestion"))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.gray)
             }
             VStack {
                 Spacer()
-                Button("Continue") {
+                Button(NSLocalizedString("Continue", comment: "go to main page")) {
                     presentationMode.wrappedValue.dismiss()
                     selectedTab = 9
                 }
