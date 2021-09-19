@@ -17,6 +17,10 @@ struct ExerciseView: View {
     @State private var showTimer = false
     @EnvironmentObject var history: HistoryStore
     //private var doneExercise: [Int] = []
+    @AppStorage("tabs") private var tabs = String(repeating: "9", count: Exercise.exercises.count)
+    @State private var tab = 0
+    @State var count = 0
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
@@ -35,10 +39,17 @@ struct ExerciseView: View {
                         timerDone = false
                         showTimer.toggle()
                         
-                        if lastExercise {
+                        if history.checkComplete() == 8 {
                             showSuccess.toggle()
                         } else {
-                        selectedTab = selectedTab + 1
+                            let thisTab = tabs.index(tabs.startIndex, offsetBy: selectedTab)
+                            tabs.replaceSubrange(thisTab...thisTab, with: String(selectedTab))
+                            for i in tabs {
+                                if i == "9" {
+                                    selectedTab = count
+                                }
+                                count = count + 1
+                            }
                         }
                     }
                     .disabled(!timerDone)

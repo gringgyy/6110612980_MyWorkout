@@ -79,4 +79,8 @@ class HistoryStore: ObservableObject {
         }
         return documentsURL.appendingPathComponent("history.plist")
     }
+    
+    func checkComplete() -> Int {
+        return exerciseDays[0].exercises.count
+    }
 }

@@ -21,7 +21,7 @@ struct SuccessView: View {
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                 Text(NSLocalizedString("""
-                    Good job completing all four exercises!!
+                    Good job completing all exercises!!
                     Remember tomorrow's another day.
                     So eat well and get some rest.
                     """, comment: "suggestion"))
