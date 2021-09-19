@@ -16,7 +16,7 @@ struct ExerciseView: View {
     @State private var timerDone = false
     @State private var showTimer = false
     @EnvironmentObject var history: HistoryStore
-    
+    //private var doneExercise: [Int] = []
     var body: some View {
         GeometryReader { geometry in
             VStack {

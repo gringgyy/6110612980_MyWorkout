@@ -55,6 +55,10 @@
 		86E3EDD426EDBE4D004DFB2D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		86E3EDD926F6479D004DFB2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		86E3EDDB26F64E7C004DFB2D /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		86EDCF1C26F74A9D007ED55A /* high-knee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-knee.mp4"; sourceTree = "<group>"; };
+		86EDCF1D26F74A9D007ED55A /* push-up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "push-up.mp4"; sourceTree = "<group>"; };
+		86EDCF1E26F74A9D007ED55A /* jumping-jack.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jumping-jack.mp4"; sourceTree = "<group>"; };
+		86EDCF1F26F74A9D007ED55A /* sit-up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sit-up.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,10 @@
 			children = (
 				86E3EDB626ED9794004DFB2D /* burpee.mp4 */,
 				86E3EDB826ED9794004DFB2D /* squat.mp4 */,
+				86EDCF1C26F74A9D007ED55A /* high-knee.mp4 */,
+				86EDCF1E26F74A9D007ED55A /* jumping-jack.mp4 */,
+				86EDCF1D26F74A9D007ED55A /* push-up.mp4 */,
+				86EDCF1F26F74A9D007ED55A /* sit-up.mp4 */,
 				86E3EDB726ED9794004DFB2D /* step-up.mp4 */,
 				86E3EDB926ED9794004DFB2D /* sun-salute.mp4 */,
 			);
