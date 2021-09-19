@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		866FCFA726F7534F004DC8FC /* push-up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 866FCFA326F7534F004DC8FC /* push-up.mp4 */; };
+		866FCFA826F7534F004DC8FC /* sit-up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 866FCFA426F7534F004DC8FC /* sit-up.mp4 */; };
+		866FCFA926F7534F004DC8FC /* jumping-jack.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 866FCFA526F7534F004DC8FC /* jumping-jack.mp4 */; };
+		866FCFAA26F7534F004DC8FC /* high-knee.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 866FCFA626F7534F004DC8FC /* high-knee.mp4 */; };
 		86E3EDA226ED8BF4004DFB2D /* MyWorkoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E3EDA126ED8BF4004DFB2D /* MyWorkoutApp.swift */; };
 		86E3EDA426ED8BF4004DFB2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E3EDA326ED8BF4004DFB2D /* ContentView.swift */; };
 		86E3EDA626ED8BF4004DFB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E3EDA526ED8BF4004DFB2D /* Assets.xcassets */; };
@@ -31,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		866FCFA326F7534F004DC8FC /* push-up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "push-up.mp4"; sourceTree = "<group>"; };
+		866FCFA426F7534F004DC8FC /* sit-up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sit-up.mp4"; sourceTree = "<group>"; };
+		866FCFA526F7534F004DC8FC /* jumping-jack.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jumping-jack.mp4"; sourceTree = "<group>"; };
+		866FCFA626F7534F004DC8FC /* high-knee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-knee.mp4"; sourceTree = "<group>"; };
 		86E3ED9E26ED8BF4004DFB2D /* MyWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E3EDA126ED8BF4004DFB2D /* MyWorkoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkoutApp.swift; sourceTree = "<group>"; };
 		86E3EDA326ED8BF4004DFB2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,10 +63,6 @@
 		86E3EDD426EDBE4D004DFB2D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		86E3EDD926F6479D004DFB2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		86E3EDDB26F64E7C004DFB2D /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
-		86EDCF1C26F74A9D007ED55A /* high-knee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-knee.mp4"; sourceTree = "<group>"; };
-		86EDCF1D26F74A9D007ED55A /* push-up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "push-up.mp4"; sourceTree = "<group>"; };
-		86EDCF1E26F74A9D007ED55A /* jumping-jack.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jumping-jack.mp4"; sourceTree = "<group>"; };
-		86EDCF1F26F74A9D007ED55A /* sit-up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sit-up.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,11 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				86E3EDB626ED9794004DFB2D /* burpee.mp4 */,
+				866FCFA626F7534F004DC8FC /* high-knee.mp4 */,
+				866FCFA526F7534F004DC8FC /* jumping-jack.mp4 */,
+				866FCFA326F7534F004DC8FC /* push-up.mp4 */,
+				866FCFA426F7534F004DC8FC /* sit-up.mp4 */,
 				86E3EDB826ED9794004DFB2D /* squat.mp4 */,
-				86EDCF1C26F74A9D007ED55A /* high-knee.mp4 */,
-				86EDCF1E26F74A9D007ED55A /* jumping-jack.mp4 */,
-				86EDCF1D26F74A9D007ED55A /* push-up.mp4 */,
-				86EDCF1F26F74A9D007ED55A /* sit-up.mp4 */,
 				86E3EDB726ED9794004DFB2D /* step-up.mp4 */,
 				86E3EDB926ED9794004DFB2D /* sun-salute.mp4 */,
 			);
@@ -222,9 +226,13 @@
 				86E3EDBC26ED9794004DFB2D /* squat.mp4 in Resources */,
 				86E3EDBB26ED9794004DFB2D /* step-up.mp4 in Resources */,
 				86E3EDA926ED8BF4004DFB2D /* Preview Assets.xcassets in Resources */,
+				866FCFA826F7534F004DC8FC /* sit-up.mp4 in Resources */,
 				86E3EDD826F6479D004DFB2D /* Localizable.strings in Resources */,
+				866FCFA926F7534F004DC8FC /* jumping-jack.mp4 in Resources */,
+				866FCFA726F7534F004DC8FC /* push-up.mp4 in Resources */,
 				86E3EDA626ED8BF4004DFB2D /* Assets.xcassets in Resources */,
 				86E3EDBD26ED9794004DFB2D /* sun-salute.mp4 in Resources */,
+				866FCFAA26F7534F004DC8FC /* high-knee.mp4 in Resources */,
 				86E3EDBA26ED9794004DFB2D /* burpee.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
